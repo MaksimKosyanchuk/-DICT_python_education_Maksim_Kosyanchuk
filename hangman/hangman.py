@@ -31,7 +31,6 @@ def first_invert(visible_word, visible_word_list):
     visible_word_len = len(visible_word_list)
     for index in range(visible_word_len):
         visible_word_list[index] = "-"
-
     visible_word = join_list(visible_word, visible_word_list)
 
     return visible_word
