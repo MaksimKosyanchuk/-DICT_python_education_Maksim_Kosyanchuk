@@ -3,7 +3,9 @@ from symbols import symbols
 
 class TicTactToe:
     """main class"""
-    player = "X"
+    def __init(self):
+        self.player = "X"
+
     def lobby(self):
         """Lobby func, запускается сначала"""
         print("TicTacToe by Maks")
@@ -35,7 +37,6 @@ class TicTactToe:
             except ValueError:
                 print("You should enter numbers!")
 
-
     def game_play(self):
         """Main func"""
         for i in range(9):
@@ -55,6 +56,7 @@ class TicTactToe:
          возвращает bool"""
         symbols_fulling_result = symbols.fulling(cord_x, cord_y, self.player)
         return symbols_fulling_result
+
 
 tictactoe = TicTactToe()
 
