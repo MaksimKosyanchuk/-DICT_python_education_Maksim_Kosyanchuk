@@ -149,3 +149,4 @@ def lobby():
 # Точка входа
 if __name__ == "__main__":
     lobby()
+
