@@ -4,15 +4,16 @@ from calculate import calc
 
 class Matrixprocessing:
     """main class"""
-    START_TEXT = """
-    1. Add matrices
-    2. Multiply matrix by a constant
-    3. Multiply matrices
-    4. Transpose matrix
-    5. Calculate a determinant
-    6. Inverse matrix
-    0. Exit
-    """
+    def __init__(self):
+        START_TEXT = """
+        1. Add matrices
+        2. Multiply matrix by a constant
+        3. Multiply matrices
+        4. Transpose matrix
+        5. Calculate a determinant
+        6. Inverse matrix
+        0. Exit
+        """
 
     def input_user_choice(self) -> int:
         """Функция инпут выбора действия от пользователя, возвращает integer выбора пользователя"""
@@ -28,7 +29,8 @@ class Matrixprocessing:
                 print("enter integers from 0 to 6!\n")
         return user_choice_var
 
-    def check_user_choice(self, user_choice) -> bool:
+    @staticmethod
+    def check_user_choice(user_choice) -> bool:
         """сравниваем выбор пользователя  с доступными, user_choice - выбор пользователя,
          целое число от 0 до 6, делает операции в зависимости от выбора,
          возвращает False если надо завершить программу"""
